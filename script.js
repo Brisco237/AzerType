@@ -1,8 +1,12 @@
-let question = "manger"
-let reponse = prompt("quel est le nom mystere :")
+let listeMots = ["Cachalot", "Pétunia", "Serviette"]
+let score = 0
+let reponseUser = prompt("Quel est le premier mot du tableau ?")
 
-if(reponse === question){
-    console.log("bravo")
+if(reponseUser === listeMots[0]){
+    score += 1
+    console.log("Bravo ! Votre score est de " + score)
 }else{
-    console.log("perdu")
+    console.log("Dommage ! Votre score est de " + score)
 }
+
+console.log(score)
