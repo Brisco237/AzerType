@@ -10,7 +10,10 @@ function choisirPhrasesOuMots() {
 }
 
 function afficherResultat(score, nombreDeMots){
-    console.log("votre score est de " + score + "/" + nombreDeMots)
+    let spanScore = document.querySelector(".zoneScore span")
+    let afficherScore = `${score} / ${nombreDeMots}`
+    spanScore.textContent = afficherScore
+    // console.log("votre score est de " + score + "/" + nombreDeMots)
 }
 
 function lancerBoucleDeJeu(listePropositions) {
@@ -41,19 +44,10 @@ function lancerJeu(){
     afficherResultat(score, nombreDeMots)
 }
 
-// lancerJeu()
+lancerJeu()
 
 let inputEcriture = document.getElementById("inputEcriture")
-console.log(inputEcriture)
-
 let btnValiderMot = document.getElementById("btnValiderMot")
-console.log(btnValiderMot)
-
 let zoneProposition = document.querySelector(".zoneProposition")
-console.log(zoneProposition)
-
 let zoneScore = document.querySelector(".zoneScore span")   
-console.log(zoneScore)
-
 let btnRadio = document.querySelectorAll(".optionSource input")
-console.log(btnRadio)
