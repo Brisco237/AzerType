@@ -2,9 +2,11 @@ const listeMots = ["Cachalot", "Pétunia", "Serviette"]
 const listePhrases = ["Pas de panique !","La vie,l'univers et le reste", "Merci pour le poisson"]
 let score = 0
 
-let choix = prompt("Voulez-vous des mots ou des phrases ? (mots/phrases)")
-while(choix !== "mots" && choix !== "phrases"){
-    choix = prompt("Voulez-vous des mots ou des phrases ? (mots/phrases)")
+function choisirPhrasesOuMots() {
+    let choix = prompt("Voulez-vous des mots ou des phrases ? (mots/phrases)")
+    while (choix !== "mots" && choix !== "phrases") {
+        choix = prompt("Voulez-vous des mots ou des phrases ? (mots/phrases)")
+    }
 }
 
 if(choix === "mots"){
@@ -25,5 +27,8 @@ if(choix === "mots"){
         }
     }
     console.log("votre score est de " + score + "/" + listePhrases.length)
+}
+function afficherResultat(resultat, nombreDeMots){
+
 }
 
