@@ -1,3 +1,5 @@
-for(let compteur = 0; compteur < 11; compteur++){
-    console.log(compteur);
+let compteur = 0  
+while(compteur < 11){
+    console.log(compteur)
+    compteur=compteur + 1
 }
