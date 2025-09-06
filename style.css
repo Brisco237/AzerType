@@ -12,8 +12,8 @@
  */
 
 body {
-    --color-primary: #f76c5e;
-    --color-secondary: #f68e5f;
+    --color-primary: #474d16;
+    --color-secondary: #f6965f;
     --color-tertiary: #ffeee6;    
 }
 
@@ -129,7 +129,7 @@ footer {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 30px;
+    padding: 10px;
     font-weight: 600;
     font-size: 17px;
     color: white;
