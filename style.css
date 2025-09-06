@@ -175,6 +175,8 @@ footer {
 /* Eléments du formulaire de saisie */
 .zoneSaisie input[type='text'] {
     width: 80%;
+    outline: none;
+    padding-left: 10px;
 }
 
 .zoneSaisie button {
