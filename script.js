@@ -2,9 +2,9 @@ const listeMots = ["Cachalot", "Pétunia", "Serviette"]
 const listePhrases = ["Pas de panique !","La vie,l'univers et le reste", "Merci pour le poisson"]
 
 function choisirPhrasesOuMots() {
-    let choix = prompt("Voulez-vous des mots ou des phrases ? (mots/phrases)")
+    // let choix = prompt("Voulez-vous des mots ou des phrases ? (mots/phrases)")
     while (choix !== "mots" && choix !== "phrases") {
-        choix = prompt("Voulez-vous des mots ou des phrases ? (mots/phrases)")
+            // choix = prompt("Voulez-vous des mots ou des phrases ? (mots/phrases)")
     }
     return choix
 }
@@ -13,13 +13,12 @@ function afficherResultat(score, nombreDeMots){
     let spanScore = document.querySelector(".zoneScore span")
     let afficherScore = `${score} / ${nombreDeMots}`
     spanScore.textContent = afficherScore
-    // console.log("votre score est de " + score + "/" + nombreDeMots)
 }
 
 function lancerBoucleDeJeu(listePropositions) {
     let score = 0
     for (let i = 0; i < listePropositions.length; i++) {
-        let reponseUser = prompt("Entrez une phrase :")
+        // let reponseUser = prompt("Entrez une phrase :")
         if (reponseUser === listePropositions[i]) {
             console.log("bravo")
             score += 1
@@ -45,9 +44,3 @@ function lancerJeu(){
 }
 
 lancerJeu()
-
-let inputEcriture = document.getElementById("inputEcriture")
-let btnValiderMot = document.getElementById("btnValiderMot")
-let zoneProposition = document.querySelector(".zoneProposition")
-let zoneScore = document.querySelector(".zoneScore span")   
-let btnRadio = document.querySelectorAll(".optionSource input")
