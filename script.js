@@ -7,13 +7,9 @@ function lancerJeu(){
     let nombreDeMots = 0
 
     let btnValiderMot = document.getElementById("btnValiderMot")
+    let inputEcriture = document.getElementById("inputEcriture")
     btnValiderMot.addEventListener("click", () => {
         console.log("J'ai cliqué !")
-    })
-
-    let inputEcriture = document.getElementById("inputEcriture")
-    inputEcriture.addEventListener("input", () => {
-        console.log(inputEcriture.value)
     })
 
     afficherResultat(score, nombreDeMots)
