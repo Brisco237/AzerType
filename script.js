@@ -1,30 +1,10 @@
 const listeMots = ["Cachalot", "Pétunia", "Serviette"]
 const listePhrases = ["Pas de panique !","La vie,l'univers et le reste", "Merci pour le poisson"]
 
-function choisirPhrasesOuMots() {
-    // let choix = prompt("Voulez-vous des mots ou des phrases ? (mots/phrases)")
-    while (choix !== "mots" && choix !== "phrases") {
-            // choix = prompt("Voulez-vous des mots ou des phrases ? (mots/phrases)")
-    }
-    return choix
-}
-
 function afficherResultat(score, nombreDeMots){
     let spanScore = document.querySelector(".zoneScore span")
     let afficherScore = `${score} / ${nombreDeMots}`
     spanScore.textContent = afficherScore
-}
-
-function lancerBoucleDeJeu(listePropositions) {
-    let score = 0
-    for (let i = 0; i < listePropositions.length; i++) {
-        // let reponseUser = prompt("Entrez une phrase :")
-        if (reponseUser === listePropositions[i]) {
-            console.log("bravo")
-            score += 1
-        }
-    }
-    return score
 }
 
 function lancerJeu(){
