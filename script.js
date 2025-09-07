@@ -6,6 +6,18 @@ function lancerJeu(){
     let score = 0
     let nombreDeMots = 0
 
+    let btnValiderMot = document.getElementById("btnValiderMot")
+    btnValiderMot.addEventListener("click", () => {
+        console.log("J'ai cliqué !")
+    })
+
+    let inputEcriture = document.getElementById("inputEcriture")
+    inputEcriture.addEventListener("input", () => {
+        console.log(inputEcriture.value)
+    })
+
     afficherResultat(score, nombreDeMots)
 }
+
+lancerJeu()
 
