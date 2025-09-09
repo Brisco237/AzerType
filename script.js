@@ -13,7 +13,7 @@ let i = 0
 
 zoneProposition.innerHTML = listeMots[i]
 btnValiderMot.addEventListener("click", () => {
-    if(inputEcriture.value === listeMots[i]) {
+    if(inputEcriture.value === listeMots[i]){
         score++
     }
     i++
