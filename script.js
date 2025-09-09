@@ -6,14 +6,23 @@ let inputEcriture = document.getElementById("inputEcriture")
 let zoneScore = document.querySelector(".zoneScore span")
 let zoneProposition = document.querySelector(".zoneProposition")
 
+
 // Essayez d'afficher les élements récupérés
-let i = 0
 let score = 0
-zoneProposition.innerHTML = listeMots[0]
-btnValiderMot.addEventListener("click", ()=>{
-    if(inputEcriture.value === listeMots[i]){
+let i = 0
+
+zoneProposition.innerHTML = listeMots[i]
+btnValiderMot.addEventListener("click", () => {
+    if(inputEcriture.value === listeMots[i]) {
         score++
     }
+    i++
     zoneScore.innerHTML = score + " / " + listeMots.length
     inputEcriture.value = ""
+    if(listeMots[i] === undefined){
+        zoneProposition.innerHTML = "Le jeu est fini !"
+        btnValiderMot.disabled = true
+    }else{
+        zoneProposition.innerHTML = listeMots[i]
+    }
 })
