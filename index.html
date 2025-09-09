@@ -40,13 +40,18 @@
         </div>
     </main>
     <div class="section-partagescore">
-        <form>
-            <h3>Partagez votre score avec des amis</h3>
-            <label for="nom">Nom :</label>
-            <input type="text" name="nom" id="nom" placeholder="Enter your name" required>
-            <label for="email">Email :</label>
-            <input type="email" name="email" id="email" placeholder="Nom@gmail.com" required>
-        </form>
+        <div class="popup">
+            <form>
+                <h3>Partagez votre score avec des amis</h3>
+                <label for="nom">Nom :</label>
+                <input type="text" name="nom" id="nom" placeholder="Enter your name" required>
+                <label for="email">Avec qui voulez vous partagez votre score ?</label>
+                <input type="email" name="email" id="email" placeholder="Nom@gmail.com" required><br>
+                <br><button type="submit">Envoyer</button>
+            </form>
+            <br>
+            <button id="fermerpopup">Fermer le popup</button>
+        </div>
     </div>
     <!-- FOOTER -->
     <footer>

@@ -46,4 +46,14 @@ for(let j = 0; j < listeBtnRadio.length; j++){
     })
 }
 
-let 
+let btnPartagerScore = document.getElementById("btnPartagerScore")
+let sectionPartageScore = document.querySelector(".section-partagescore")
+let btnFermerPopup = document.getElementById("fermerpopup")
+
+btnPartagerScore.addEventListener("click", () => {
+    sectionPartageScore.classList.remove('section-partagescore')
+})
+
+btnFermerPopup.addEventListener("click", () => {
+    sectionPartageScore.classList.add('section-partagescore')
+})

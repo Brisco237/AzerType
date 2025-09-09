@@ -54,7 +54,6 @@ input[type='email'] {
     font-size: 17px;
     font-weight: 600;
     font-size: 17px;
-    color: var(--color-primary);
 }
 
 input[type='text']::placeholder,
@@ -189,7 +188,33 @@ section partage score form
 */
 .section-partagescore{
     margin-bottom: 10px;
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.5);
 }
+.popup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition:1s ease-in;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    background-color: #e2bcb9;
+    border-radius: 30px;
+    z-index: 1;
+}
+
+
 
 /** 
  * Responsive
