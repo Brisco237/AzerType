@@ -45,3 +45,5 @@ for(let j = 0; j < listeBtnRadio.length; j++){
         zoneScore.innerHTML = score + " / " + listeProposition.length
     })
 }
+
+let 
