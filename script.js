@@ -15,19 +15,33 @@ let zoneProposition = document.querySelector(".zoneProposition")
 // Essayez d'afficher les élements récupérés
 let score = 0
 let i = 0
+let listeProposition = listeMots
 
 zoneProposition.innerHTML = listeMots[i]
 btnValiderMot.addEventListener("click", () => {
-    if(inputEcriture.value === listeMots[i]){
+    if(inputEcriture.value === listeProposition[i]){
         score++
     }
     i++
-    zoneScore.innerHTML = score + " / " + listeMots.length
+    zoneScore.innerHTML = score + " / " + listeProposition.length
     inputEcriture.value = ""
-    if(listeMots[i] === undefined){
+    if(listeProposition[i] === undefined){
         zoneProposition.innerHTML = "Le jeu est fini !"
         btnValiderMot.disabled = true
     }else{
-        zoneProposition.innerHTML = listeMots[i]
+        zoneProposition.innerHTML = listeProposition[i]
     }
 })
+
+let listeBtnRadio = document.querySelectorAll("input[type='radio']")
+for(let j = 0; j < listeBtnRadio.length; j++){
+    listeBtnRadio[j].addEventListener("change", (e) => {
+        if(e.target.value === "1"){
+            listeProposition = listeMots
+        }else{
+            listeProposition = listePhrases
+        }
+        zoneProposition.innerHTML = listeProposition[i]
+        zoneScore.innerHTML = score + " / " + listeProposition.length
+    })
+}
