@@ -59,6 +59,11 @@ btnFermerPopup.addEventListener("click", () => {
     sectionPartageScore.classList.add('section-partagescore')
 })
 
-form.addEventListener("submit", () => {
-    preventDefault()
+form.addEventListener("submit", (event) => {
+    event.preventDefault()
+    let nom = document.getElementById("nom")
+    let email = document.getElementById("email")
+
+    console.log("Votre nom est : " + nom.value)
+    console.log("Votre email est :" + email.value)
 })
